@@ -1,7 +1,6 @@
 import discord
 import json
 import asyncio
-import time as times
 import ascii
 import os
 import requests
