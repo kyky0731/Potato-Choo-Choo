@@ -56,6 +56,9 @@ async def on_guild_join(guild):
 async def on_message(message):
   if message.author == client.user:
     return
+  channels = await guild.fetch_channel(1084499619427405825)
+  if message.channel == channels:
+    await message.channel.send("<@1087207191997583452>")
   guild = message.author.guild
   guildid = message.author.guild.id
   try:
